@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Send a letter to your closest ones.</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Source+Serif+Pro:700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="./assets/hero-illustration.svg" alt="Love Illustration" class="hero" />
+            <div>
+                <h1>This farewell, send a letter to your closest ones.</h1>
+                <h2>Let’s end the college life by being grateful and writing a few words for those who made these 4
+                    years easy to survive. This is also a chance to get over your grudges and relive the memories of the
+                    past.</h2>
+            </div>
+            <footer>– an effort to help you be a nice person, by a not-so-nice person.</footer>
+        </div>
+        <div class="main">
+            <div class="card" id="card">
+                <div class="col">
+                    <h2>Dear<span contenteditable="true" spellcheck="false">Abhishek Sharma</span></h2>
+                    <div class="section">
+                        <h3>Thank you for</h3>
+                        <p contenteditable="true" spellcheck="false">helping all these years with lab assignment codes,
+                            late night lectures and being a food partner</p>
+                    </div>
+                    <div class="section">
+                        <h3>Sorry about the time when I</h3>
+                        <p contenteditable="true" spellcheck="false">fought for months over a stupid issue and I ditched
+                            you on that CL trip</p>
+                    </div>
+                    <div class="section">
+                        <h3>My favorite memory with you</h3>
+                        <p contenteditable="true" spellcheck="false">The Meghalaya Trip and late nights of Effe16</p>
+                    </div>
+                    <div class="section">
+                        <h3>One Advice I have for you</h3>
+                        <p contenteditable="true" spellcheck="false">Dont overthink, Believe in yourself and plunge in.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col">
+                    <div class="picker">
+                        <img src="./assets/placeholder.png" id="friends"/>
+                        <div class="desc">
+                            <label for="uploader">
+                                <img src="./assets/add.svg"/>
+                                <h3>Choose a photo</h3>
+                                <p>Chose something special, something which defines your friendship</p>
+                            </label>
+                            <input type="file" accept="image/*" onchange="loadImage(event)" id="uploader">
+                        </div>
+                    </div>
+                    <div class="salutation">
+                        <h3>With Love</h3>
+                        <p contenteditable="true" spellcheck="false">Sharma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="primary"><a>Download Letter ↓</button>
+                <button class="secondary">Send Anonymously →</button>
+                <p>The text and images can be directly edited by clicking on them. None of the data you enter is stored
+                    on the server.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="html2canvas.min.js"></script>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Smiley";
+  src: url("./assets/Smiley.otf") format("opentype");
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.container p {
+  padding: 0 4px;
+  max-width: 370px;
+}
+.container span:focus,
+.container p:focus {
+  outline: 1px dashed #282456;
+}
+.container span {
+  cursor: pointer;
+}
+.container .sidebar {
+  width: 40%;
+  padding: 2em;
+  min-width: 300px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container .sidebar img {
+  height: 286px;
+}
+.container .sidebar h1 {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 2.25em;
+  color: #282456;
+}
+.container .sidebar h2 {
+  font-family: "Source Sans Pro";
+  font-size: 1.25em;
+  color: rgba(40, 36, 86, 0.75);
+  line-height: 1.5em;
+  margin-top: 0.75em;
+}
+.container .sidebar footer {
+  font-family: "Source Sans Pro";
+  font-size: 0.75em;
+  color: rgba(40, 36, 86, 0.5);
+}
+.container .main {
+  width: 60%;
+  background-color: #282456;
+  padding: 2em;
+}
+.container .main .card {
+  padding: 1.5em;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  border: solid 10px #66C4AE;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .main .card h2 {
+  font-size: 1.5em;
+  font-family: "Smiley";
+  color: #D65454;
+}
+.container .main .card h2 span {
+  color: #282456;
+  margin-left: 0.5em;
+}
+.container .main .card .section, .container .main .card .salutation {
+  margin-top: 1.5em;
+  font-family: "Smiley";
+  line-height: 2em;
+}
+.container .main .card .section h3, .container .main .card .salutation h3 {
+  font-size: 1.5em;
+  color: #D65454;
+}
+.container .main .card .section p, .container .main .card .salutation p {
+  font-size: 1.25em;
+  color: #282456;
+  cursor: pointer;
+}
+.container .main .card .divider {
+  border: 0.5px solid #66C4AE;
+  width: 0px;
+  height: 500px;
+  margin: 0 1.5em;
+}
+.container .main .card .salutation {
+  transform: rotate(-5deg);
+}
+.container .main .card .salutation p {
+  font-size: 24px;
+}
+.container .main .card .picker {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .card .picker #friends {
+  height: 375px;
+  width: 320px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.container .main .card .picker input {
+  display: none;
+}
+.container .main .card .picker label {
+  cursor: pointer;
+}
+.container .main .card .picker .desc {
+  font-family: "Source Sans Pro";
+  color: #282456;
+  position: absolute;
+  left: 77%;
+  top: 25%;
+  max-width: 200px;
+  text-align: center;
+  z-index: 99;
+}
+.container .main .card .picker .desc h3 {
+  font-size: 1.5em;
+  line-height: 1.75em;
+  margin-top: 4px;
+}
+.container .main .card .picker .desc p {
+  opacity: 0.75;
+  font-size: 0.75em;
+  color: #282456;
+  line-height: 1.5em;
+}
+.container .main .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.container .main .actions button {
+  border-radius: 2px;
+  font-family: "Source Sans Pro";
+  border: none;
+}
+.container .main .actions button:focus {
+  outline: none;
+}
+.container .main .actions .primary {
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #282456;
+  padding: 1em;
+  background: #FFFFFF;
+}
+.container .main .actions .secondary {
+  font-size: 1.125em;
+  font-weight: 600;
+  background: #282456;
+  padding: 1em;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.container .main .actions p {
+  font-family: "Source Sans Pro";
+  font-size: 0.75em;
+  color: rgba(250, 250, 250, 0.5);
+  line-height: 1.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

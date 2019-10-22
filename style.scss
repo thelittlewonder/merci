@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Smiley";
+    src: url("./assets/Smiley.otf") format("opentype");
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        padding: 0 4px;
+        max-width: 370px;
+    }
+
+    span:focus,
+    p:focus {
+        outline: 1px dashed #282456;
+    }
+
+    span {
+        cursor: pointer;
+    }
+
+    .sidebar {
+        width: 40%;
+        padding: 2em;
+        min-width: 300px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        img {
+            height: 286px;
+        }
+
+        h1 {
+            font-family: "Source Serif Pro";
+            font-weight: 700;
+            font-size: 2.25em;
+            color: #282456;
+        }
+
+        h2 {
+            font-family: "Source Sans Pro";
+            font-size: 1.25em;
+            color: rgba(40, 36, 86, 0.75);
+            line-height: 1.5em;
+            margin-top: 0.75em;
+        }
+
+        footer {
+            font-family: "Source Sans Pro";
+            font-size: 0.75em;
+            color: rgba(40, 36, 86, 0.50);
+        }
+    }
+
+    .main {
+        width: 60%;
+        background-color: #282456;
+        padding: 2em;
+
+        .card {
+            padding: 1.5em;
+            background-color: #FAFAFA;
+            border-radius: 4px;
+            border: solid 10px #66C4AE;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            h2 {
+                font-size: 1.5em;
+                font-family: "Smiley";
+                color: #D65454;
+
+                span {
+                    color: #282456;
+                    margin-left: 0.5em;
+                }
+            }
+
+            .section {
+                margin-top: 1.5em;
+                font-family: "Smiley";
+                line-height: 2em;
+
+                h3 {
+                    font-size: 1.5em;
+                    color: #D65454;
+                }
+
+                p {
+                    font-size: 1.25em;
+                    color: #282456;
+                    cursor: pointer;
+                }
+            }
+
+            .divider {
+                border: 0.5px solid #66C4AE;
+                width: 0px;
+                height: 500px;
+                margin: 0 1.5em;
+            }
+
+            .salutation {
+                @extend .section;
+                transform: rotate(-5deg);
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            .picker {
+                display: flex;
+                flex-direction: column;
+
+                #friends {
+                    height: 375px;
+                    width: 320px;
+                    object-fit: cover;
+                    border-radius: 4px;
+                }
+
+                input {
+                    display: none;
+                }
+
+                label {
+                    cursor: pointer;
+                }
+
+                .desc {
+                    font-family: "Source Sans Pro";
+                    color: #282456;
+                    position: absolute;
+                    left: 77%;
+                    top: 25%;
+                    max-width: 200px;
+                    text-align: center;
+                    z-index: 99;
+
+                    h3 {
+                        font-size: 1.5em;
+                        line-height: 1.75em;
+                        margin-top: 4px;
+                    }
+
+                    p {
+                        opacity: 0.75;
+                        font-size: 0.75em;
+                        color: #282456;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            button {
+                border-radius: 2px;
+                font-family: "Source Sans Pro";
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .primary {
+                font-size: 1.125em;
+                font-weight: 600;
+                color: #282456;
+                padding: 1em;
+                background: #FFFFFF;
+
+            }
+
+            .secondary {
+                font-size: 1.125em;
+                font-weight: 600;
+                background: #282456;
+                padding: 1em;
+                border: 1px solid #FFFFFF;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: "Source Sans Pro";
+                font-size: 0.75em;
+                color: rgba(250, 250, 250, 0.50);
+                line-height: 1.5em;
+            }
+        }
+    }
+
+}
