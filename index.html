@@ -50,10 +50,10 @@
                 <div class="divider"></div>
                 <div class="col">
                     <div class="picker">
-                        <img src="./assets/placeholder.png" id="friends"/>
+                        <img src="./assets/placeholder.png" id="friends" crossorigin="anonymous"/>
                         <div class="desc">
                             <label for="uploader">
-                                <img src="./assets/add.svg"/>
+                                <img src="./assets/add.svg" crossorigin="anonymous"/>
                                 <h3>Choose a photo</h3>
                                 <p>Chose something special, something which defines your friendship</p>
                             </label>
@@ -67,8 +67,8 @@
                 </div>
             </div>
             <div class="actions">
-                <button class="primary"><a>Download Letter ↓</button>
-                <button class="secondary">Send Anonymously →</button>
+                <a class="primary" onclick="downloadImage()" download="MyImage.png" href="#">Download Letter ↓</a>
+                <a class="secondary">Send Anonymously →</a>
                 <p>The text and images can be directly edited by clicking on them. None of the data you enter is stored
                     on the server.</p>
             </div>

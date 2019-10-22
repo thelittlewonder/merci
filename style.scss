@@ -168,10 +168,11 @@
             justify-content: space-between;
             margin-top: 24px;
 
-            button {
+            a {
                 border-radius: 2px;
                 font-family: "Source Sans Pro";
                 border: none;
+                cursor: pointer;
                 &:focus{
                     outline: none;
                 }

@@ -141,12 +141,13 @@
   justify-content: space-between;
   margin-top: 24px;
 }
-.container .main .actions button {
+.container .main .actions a {
   border-radius: 2px;
   font-family: "Source Sans Pro";
   border: none;
+  cursor: pointer;
 }
-.container .main .actions button:focus {
+.container .main .actions a:focus {
   outline: none;
 }
 .container .main .actions .primary {
