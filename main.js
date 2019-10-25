@@ -11,7 +11,6 @@ function downloadImage() {
     html2canvas(document.getElementById("card"), {
         scale: 1
     }).then(canvas => {
-        let imageBlob = canvas.toDataURL();
-        document.getElementsByClassName('primary')[0].href = imageBlob;
+        console.log(canvas.toDataURL());
     });
 }
