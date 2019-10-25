@@ -146,6 +146,7 @@
   font-family: "Source Sans Pro";
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .container .main .actions a:focus {
   outline: none;

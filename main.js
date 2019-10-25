@@ -1,4 +1,5 @@
 var flag = 0;
+downloadImage();
 var loadImage = function (event) {
     let output = document.getElementById('friends');
     output.src = URL.createObjectURL(event.target.files[0]);
@@ -9,8 +10,15 @@ var loadImage = function (event) {
 
 function downloadImage() {
     html2canvas(document.getElementById("card"), {
-        scale: 1
+        scale: 1.5
     }).then(canvas => {
-        console.log(canvas.toDataURL());
+        let imageUrl; 
+        let temp = canvas.toDataURL().split(';');
+        let half0, half1;
+        half0 = temp[0].replace('image','application');
+        half0 = half0.replace('png','octet-stream');
+        half1 = temp[1];
+        imageUrl = half0+';'+half1;
+        document.getElementsByClassName('primary')[0].href = imageUrl;
     });
 }
