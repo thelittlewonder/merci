@@ -1,5 +1,5 @@
 var flag = 0;
-downloadImage();
+
 var loadImage = function (event) {
     let output = document.getElementById('friends');
     output.src = URL.createObjectURL(event.target.files[0]);
@@ -9,6 +9,8 @@ var loadImage = function (event) {
 };
 
 function downloadImage() {
+    let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
+    document.getElementsByClassName('primary')[0].download = to;
     html2canvas(document.getElementById("card"), {
         scale: 1.5
     }).then(canvas => {

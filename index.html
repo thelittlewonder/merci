@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="downloadImage()">
     <div class="container">
         <div class="sidebar">
             <img src="./assets/hero-illustration.svg" alt="Love Illustration" class="hero" />
@@ -26,7 +26,7 @@
         <div class="main">
             <div class="card" id="card">
                 <div class="col">
-                    <h2>Dear<span contenteditable="true" spellcheck="false">Abhishek Sharma</span></h2>
+                    <h2>Dear<span contenteditable="true" spellcheck="false" id="person">Abhishek Sharma</span></h2>
                     <div class="section">
                         <h3>Thank you for</h3>
                         <p contenteditable="true" spellcheck="false">helping all these years with lab assignment codes,
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="actions">
-                <a class="primary" onclick="downloadImage()" download="MyImage.png" href="#">Download Letter ↓</a>
+                <a class="primary" onclick="downloadImage()" download="placeholder.png" href="#">Download Letter ↓</a>
                 <a class="secondary">Send Anonymously →</a>
                 <p>The text and images can be directly edited by clicking on them. None of the data you enter is stored
                     on the server.</p>
