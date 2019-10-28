@@ -27,6 +27,5 @@ function downloadImage() {
         half1 = temp[1];
         imageUrl = half0 + ';' + half1;
         document.getElementsByClassName('primary')[0].href = imageUrl;
-        let output = document.getElementById('friends');
     });
 }
