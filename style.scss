@@ -120,9 +120,15 @@
                 display: flex;
                 flex-direction: column;
 
-                #friends {
+                .image-wrapper {
                     height: 375px;
                     width: 320px;
+                    overflow: hidden;
+                }
+
+                #friends {
+                    width: 320px;
+                    height: 100%;
                     object-fit: cover;
                     border-radius: 4px;
                 }
@@ -174,7 +180,8 @@
                 border: none;
                 cursor: pointer;
                 text-decoration: none;
-                &:focus{
+
+                &:focus {
                     outline: none;
                 }
             }
