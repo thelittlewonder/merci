@@ -53,11 +53,11 @@
                         <img src="./assets/placeholder.png" id="friends" crossorigin="anonymous"/>
                         <div class="desc">
                             <label for="uploader">
-                                <img src="./assets/add.svg" crossorigin="anonymous">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAAHeTXxYAAAAAXNSR0IArs4c6QAABAJJREFUSA2tVktsTFEYPufObTWVdEg8K0F0hhllJcJCoggLCcuZ8YiVkGBlQdIikiKphVgQiViJx0yXJASR6AoRK9qpzpQgRjxrmmhK2zm+79yHc29HEU5y5/zv/5z/dSYisFpajtr1tbPWfPj09IVGSORKxtKfrfel3tUOKoQSaqrLSQ0kYinlMUQynu4iYvEHYit8hACX5kglXjsofgMGgCfjqdua6RmjgPeRkYylCq6AK6kx5wYu6Gyw0IHvaoC4dOlW5/QuNRnPtPPg9wNSLiI9on9KKZ/3FnJNIrkws9djmjsv+NEkEKa2NrUitq2hLEbKQIYQttO9xc4234eWjKc/gFC0aielu7svviKNrlSlckZaVibfl82RplcCwuHrLElkWly2v+F2RXrmNTuam3fM9TkukIinhsM04jy3hUTO845STShM492sfDGX8WNmSEglbxqoBpsXZTYzGD6dKeGZfYIBUJiGsXTgAtGj3OKFmXVg7gTYiO/BzDnJtnv3jo6S5y1fCaFNI7RZhHYfQnuWAgxQ5fu3HI4UQ6qne0p6x7GO+RUa4DgI0xG4N+Ne7S7Ni7asNfW1IvJJmjUoRl7mC7mYKUC4Uhm7ZdKePLkygLsU2bsWzjvFZE4Es7zevckfl2ymfLEzTmGUU79QakFYEUX6M2DocBsCDK1euhlcGIEZyRc6a1zU3Eo2jldvUiaCWfFweYHNdIIZDwsrMb6M2CI9fdm7WpY5YFTCiibOPLIAfBpriorVPFKIedTjwtXwo0IcisextYI4hL3E8pFCDjQIe/7D4uVBynAFlByS8+vOhoMQ2OPl0jPmyjV6QaRhzNdzUVHTYRo37QUc8WrojHbsbVLKfsuS+7ufZa+ZCr+CGY5KRZ2CbpOU1rGevqtHYANncZbvyO8mKe7MnLN4Y7jtPIXf7Uzcuzc9N5QS68cPPcR5oiSZxjHX3iPLn0xaNdgbKm4OhcUhAsFWzoU/DFMD5PlNuGiLNiHUSh/ov3QWT+Um9ODksOayZbuiQ+VyMkCXqgthiaAAVpn0+mg0//jx+bJJI4z+/oqau26j7mZjkpfCAsSHBr/sFlKuN3moFzQPZqwU7SYdsneAnzRpLlyiD4km6UClHIhMqvujZ4NvDyoo8ovBEfDD0Tz2bfglqu+kxcEOxS+c1QGp/4DQJnvM9SGEbk452g+HZbsuspyT91/8cNyPDo89QhNFo8puYhP7fUTDnDNKVQ5J9JJdZ6f/1qHjYDSnewhNmy9kD3sHDjjyiLp5lTqDF2Aa4vsABXHJqqm9Hn769fM48n0T5LYjzysh9xHyfD7HpaGqI88hd3Y6/1rC0Ab+z9BVSoYSbwEz0bdnNCa6fjdJfgAsl6+wuA2CMgAAAABJRU5ErkJggg==">
                                 <h3>Choose a photo</h3>
                                 <p>Chose something special, something which defines your friendship</p>
                             </label>
-                            <input type="file" accept="image/*" onchange="loadImage(event)" id="uploader">
+                            <input type="file" accept="image/*" onchange="loadImage(this)" id="uploader">
                         </div>
                     </div>
                     <div class="salutation">
