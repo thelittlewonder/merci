@@ -30,6 +30,7 @@ var hideDesc = function () {
 }
 
 function downloadImage() {
+    console.log('downloadddd');
     let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
     document.getElementsByClassName('primary')[0].download = to;
     html2canvas(document.getElementById("card"), {
@@ -46,5 +47,9 @@ function downloadImage() {
     });
 }
 
-
-document.getElementById('friends')
+let a = document.getElementsByClassName('editable');
+for(i=0;i<a.length;i++){
+    a[i].addEventListener("input", function () {
+        downloadImage();
+    }, false)
+}
