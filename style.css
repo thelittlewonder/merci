@@ -2,10 +2,67 @@
   font-family: "Smiley";
   src: url("./assets/Smiley.otf") format("opentype");
 }
+@media (min-width: 1261px) {
+  .container {
+    height: 100vh;
+    flex-direction: row;
+  }
+  .container .sidebar {
+    width: 40%;
+    height: 100%;
+    min-width: 300px;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .container .main {
+    width: 60%;
+  }
+  .container .main .desc {
+    position: absolute;
+    left: 77%;
+    top: 25%;
+    max-width: 200px;
+    text-align: center;
+    z-index: 99;
+  }
+  .container .main .actions {
+    justify-content: space-between;
+  }
+  .container .main .divider {
+    height: 500px;
+  }
+}
+@media (max-width: 1260px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .sidebar {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .sidebar .hero {
+    margin-bottom: 24px;
+  }
+  .container footer {
+    display: none;
+  }
+  .container .main {
+    width: 100%;
+  }
+  .container .main .desc {
+    position: relative;
+    left: 70px;
+    bottom: 250px;
+    max-width: 200px;
+    text-align: center;
+    z-index: 99;
+  }
+  .container .main .divider {
+    height: 450px;
+  }
+}
 .container {
-  height: 100vh;
   display: flex;
-  flex-direction: row;
 }
 .container p {
   padding: 0 4px;
@@ -19,14 +76,9 @@
   cursor: pointer;
 }
 .container .sidebar {
-  width: 40%;
   padding: 2em;
-  min-width: 300px;
   display: flex;
-  height: 100%;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 .container .sidebar img {
   height: 286px;
@@ -50,7 +102,6 @@
   color: rgba(40, 36, 86, 0.5);
 }
 .container .main {
-  width: 60%;
   background-color: #282456;
   padding: 2em;
 }
@@ -89,7 +140,6 @@
 .container .main .card .divider {
   border: 0.5px solid #66C4AE;
   width: 0px;
-  height: 500px;
   margin: 0 1.5em;
 }
 .container .main .card .salutation {
@@ -102,10 +152,16 @@
   display: flex;
   flex-direction: column;
 }
+.container .main .card .picker:hover > .image-wrapper {
+  opacity: 0.15;
+}
 .container .main .card .picker .image-wrapper {
   height: 375px;
   width: 320px;
   overflow: hidden;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 .container .main .card .picker #friends {
   width: 320px;
@@ -122,12 +178,6 @@
 .container .main .card .picker .desc {
   font-family: "Source Sans Pro";
   color: #282456;
-  position: absolute;
-  left: 77%;
-  top: 25%;
-  max-width: 200px;
-  text-align: center;
-  z-index: 99;
 }
 .container .main .card .picker .desc h3 {
   font-size: 1.5em;
@@ -143,7 +193,6 @@
 .container .main .actions {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 24px;
 }
 .container .main .actions a {
@@ -152,6 +201,8 @@
   border: none;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 16px;
+  white-space: nowrap;
 }
 .container .main .actions a:focus {
   outline: none;
