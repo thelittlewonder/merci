@@ -79,7 +79,6 @@
 @media screen and (max-width: 640px) {
     .container {
         flex-direction: column;
-
         .sidebar {
             width: 100%;
             justify-content: center;
@@ -191,6 +190,13 @@
             font-family: "Source Sans Pro";
             font-size: 0.75em;
             color: rgba(40, 36, 86, 0.50);
+            a{
+                text-decoration: none;
+                color: inherit;
+                &:hover{
+                    color: #66C4AE;
+                }
+            }
         }
     }
 

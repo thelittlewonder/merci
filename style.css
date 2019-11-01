@@ -160,6 +160,13 @@
   font-size: 0.75em;
   color: rgba(40, 36, 86, 0.5);
 }
+.container .sidebar footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.container .sidebar footer a:hover {
+  color: #66C4AE;
+}
 .container .main {
   background-color: #282456;
   padding: 2em;

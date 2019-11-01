@@ -29,12 +29,17 @@ var hideDesc = function () {
     }
 }
 
+var getScale = function (){
+    console.log((window.innerWidth > 640) ? 1.5 : 1);
+    return (window.innerWidth > 640) ? 1.5 : 1;
+}
+
 var downloadImage = function() {
     console.log('downloadddd');
     let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
     document.getElementsByClassName('primary')[0].download = to;
     html2canvas(document.getElementById("card"), {
-        scale: 1.5
+        scale: getScale()
     }).then(canvas => {
         let imageUrl;
         let temp = canvas.toDataURL().split(';');
