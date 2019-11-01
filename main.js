@@ -29,7 +29,7 @@ var hideDesc = function () {
     }
 }
 
-function downloadImage() {
+var downloadImage = function() {
     console.log('downloadddd');
     let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
     document.getElementsByClassName('primary')[0].download = to;
