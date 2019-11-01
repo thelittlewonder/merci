@@ -2,7 +2,7 @@
   font-family: "Smiley";
   src: url("./assets/Smiley.otf") format("opentype");
 }
-@media (min-width: 1261px) {
+@media screen and (min-width: 1260px) {
   .container {
     height: 100vh;
     flex-direction: row;
@@ -32,7 +32,7 @@
     height: 500px;
   }
 }
-@media (max-width: 1260px) {
+@media screen and (min-width: 641px) and (max-width: 1259px) {
   .container {
     flex-direction: column;
   }
@@ -59,6 +59,65 @@
   }
   .container .main .divider {
     height: 450px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .sidebar {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .sidebar .hero {
+    margin-bottom: 1.5em;
+  }
+  .container footer {
+    display: none;
+  }
+  .container .main {
+    width: 100%;
+    padding: 1em !important;
+  }
+  .container .main .card {
+    flex-direction: column !important;
+  }
+  .container .main .card .divider {
+    visibility: hidden;
+    height: 0px;
+  }
+  .container .main .card .picker {
+    margin-top: 1.5em;
+  }
+  .container .main .card .picker .image-wrapper {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  .container .main .card .picker .image-wrapper img {
+    width: 100% !important;
+  }
+  .container .main .card .picker .desc {
+    left: 40px !important;
+    bottom: 210px !important;
+  }
+  .container .main .desc {
+    position: relative;
+    left: 70px;
+    bottom: 250px;
+    max-width: 200px;
+    text-align: center;
+    z-index: 99;
+  }
+  .container .main .divider {
+    height: 450px;
+  }
+  .container .main .actions {
+    flex-direction: column !important;
+  }
+  .container .main .actions a {
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
   }
 }
 .container {

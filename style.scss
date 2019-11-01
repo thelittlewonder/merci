@@ -3,7 +3,7 @@
     src: url("./assets/Smiley.otf") format("opentype");
 }
 
-@media (min-width:1261px) {
+@media screen and (min-width: 1260px) {
     .container {
         height: 100vh;
         flex-direction: row;
@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width:1260px) {
+@media screen and (min-width: 641px) and (max-width: 1259px) {
     .container {
         flex-direction: column;
 
@@ -75,6 +75,76 @@
 
     }
 }
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+
+        .sidebar {
+            width: 100%;
+            justify-content: center;
+
+            .hero {
+                margin-bottom: 1.5em;
+            }
+        }
+
+        footer {
+            display: none;
+        }
+
+        .main {
+            width: 100%;
+            padding: 1em!important;
+            .card {
+                flex-direction: column !important;
+
+                .divider {
+                    visibility: hidden;
+                    height: 0px;
+                }
+                .picker{
+                    margin-top: 1.5em;
+                    .image-wrapper{
+                        width: 100%!important;
+                        height: 300px!important;
+                        img{
+                            width: 100%!important;
+                        }
+                    }
+                    .desc{
+                        left: 40px!important;
+                        bottom: 210px!important;
+                    }
+                }
+            }
+
+            .desc {
+                position: relative;
+                left: 70px;
+                bottom: 250px;
+                max-width: 200px;
+                text-align: center;
+                z-index: 99;
+            }
+
+            .divider {
+                height: 450px;
+            }
+            .actions{
+                flex-direction: column !important;
+                a{
+                    margin-bottom: 16px;
+                    width: 100%;
+                    text-align:center;
+                }
+            }
+        }
+
+    }
+}
+
+
 
 .container {
     display: flex;
@@ -183,7 +253,8 @@
             .picker {
                 display: flex;
                 flex-direction: column;
-                &:hover > .image-wrapper {
+
+                &:hover>.image-wrapper {
                     opacity: 0.15;
                 }
 
