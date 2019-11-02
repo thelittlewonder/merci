@@ -31,7 +31,6 @@ var hideDesc = function () {
 }
 
 var getScale = function () {
-    console.log((window.innerWidth > 640) ? 1.5 : 1);
     return (window.innerWidth > 640) ? 1.5 : 1;
 }
 
