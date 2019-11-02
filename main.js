@@ -61,7 +61,7 @@ var sendEmail = function () {
     downloadImage();
     let emailAddress, reqUrl;
     emailAddress = document.getElementById('address').value;
-    reqUrl = 'http://thanksjhalwa.herokuapp.com?email=' + emailAddress + '&image=';
+    reqUrl = 'https://thanksjhalwa.herokuapp.com?email=' + emailAddress + '&image=';
     fetch(reqUrl).then(
             function (response) {
                 if (response.status !== 200) {
