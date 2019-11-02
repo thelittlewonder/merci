@@ -52,10 +52,10 @@ var downloadImage = function() {
     });
 }
 
-/*
+
 let a = document.getElementsByClassName('editable');
 for(i=0;i<a.length;i++){
-    a[i].addEventListener("input", function () {
+    a[i].addEventListener("focusout", function () {
         downloadImage();
     }, false)
-}*/
+}
