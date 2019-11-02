@@ -1,4 +1,5 @@
 var flag = 0;
+var imageUrl = '';
 var loadImage = function (input) {
     var preview = document.getElementById('friends');
     if (input.files && input.files[0]) {
@@ -29,19 +30,17 @@ var hideDesc = function () {
     }
 }
 
-var getScale = function (){
+var getScale = function () {
     console.log((window.innerWidth > 640) ? 1.5 : 1);
     return (window.innerWidth > 640) ? 1.5 : 1;
 }
 
-var downloadImage = function() {
-    console.log('downloadddd');
+var downloadImage = function () {
     let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
     document.getElementsByClassName('primary')[0].download = to;
     html2canvas(document.getElementById("card"), {
         scale: getScale()
     }).then(canvas => {
-        let imageUrl;
         let temp = canvas.toDataURL().split(';');
         let half0, half1;
         half0 = temp[0].replace('image', 'application');
@@ -52,9 +51,33 @@ var downloadImage = function() {
     });
 }
 
+var triggerEmail = function () {
+    document.getElementById('trig').style.display = 'none';
+    document.getElementById('email').style.display = 'flex';
+}
+
+var sendEmail = function () {
+    event.preventDefault();
+    downloadImage();
+    let emailAddress, reqUrl;
+    emailAddress = document.getElementById('address').value;
+    reqUrl = 'http://thanksjhalwa.herokuapp.com?email=' + emailAddress + '&image=';
+    fetch(reqUrl).then(
+            function (response) {
+                if (response.status !== 200) {
+                    console.log('Looks like there was a problem. Status Code: ' +
+                        response.status);
+                    return;
+                }
+            }
+        )
+        .catch(function (err) {
+            console.log('Fetch Error :-S', err);
+        });
+}
 
 let a = document.getElementsByClassName('editable');
-for(i=0;i<a.length;i++){
+for (i = 0; i < a.length; i++) {
     a[i].addEventListener("focusout", function () {
         downloadImage();
     }, false)

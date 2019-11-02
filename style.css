@@ -261,6 +261,35 @@
   flex-direction: row;
   margin-top: 24px;
 }
+.container .main .actions #email {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  display: none;
+}
+.container .main .actions #email input {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin-right: 8px;
+  padding: 0 8px;
+  color: #66C4AE;
+  font-family: "Source Sans Pro";
+  font-size: 1.25em;
+}
+.container .main .actions #email input:focus {
+  border: 1px solid #66C4AE;
+  outline: none;
+}
+.container .main .actions #email button {
+  border-radius: 2px;
+  padding: 16px;
+  white-space: nowrap;
+  margin-right: 16px;
+}
+.container .main .actions #email button:focus {
+  outline: none;
+}
 .container .main .actions a {
   border-radius: 2px;
   font-family: "Source Sans Pro";
@@ -279,6 +308,13 @@
   color: #282456;
   padding: 1em;
   background: #FFFFFF;
+  align-self: flex-start;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}
+.container .main .actions .primary:hover {
+  transform: scale(1.01);
 }
 .container .main .actions .secondary {
   font-size: 1.125em;
@@ -287,6 +323,7 @@
   padding: 1em;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
+  align-self: flex-start;
 }
 .container .main .actions p {
   font-family: "Source Sans Pro";
