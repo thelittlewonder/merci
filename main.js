@@ -60,18 +60,28 @@ var sendEmail = function () {
     downloadImage();
     let emailAddress, reqUrl;
     emailAddress = document.getElementById('address').value;
-    reqUrl = 'https://thanksjhalwa.herokuapp.com?email=' + emailAddress + '&image=';
-    fetch(reqUrl).then(
-            function (response) {
-                if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' +
-                        response.status);
-                    return;
-                }
-            }
-        )
-        .catch(function (err) {
-            console.log('Fetch Error :-S', err);
+    reqUrl = 'https://thanksjhalwa.herokuapp.com/'
+
+    var headers = {
+        "Content-Type": "application/json",
+        "Access-Control-Origin": "*"
+    }
+
+    var data = {
+        "email": emailAddress,
+        "image": imageUrl
+    }
+
+    fetch(reqUrl, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data)
         });
 }
 
