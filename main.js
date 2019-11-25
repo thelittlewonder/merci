@@ -35,7 +35,7 @@ var getScale = function (type) {
     if (type === 'dl') {
         return (window.innerWidth > 640) ? 1.5 : 1;
     } else {
-        return 0.5
+        return 0.3
     }
 }
 
