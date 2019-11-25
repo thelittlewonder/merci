@@ -1,5 +1,6 @@
 var flag = 0;
-var imageUrl = '';
+var downloadUrl = '';
+var emailUrl = '';
 var loadImage = function (input) {
     var preview = document.getElementById('friends');
     if (input.files && input.files[0]) {
@@ -30,25 +31,42 @@ var hideDesc = function () {
     }
 }
 
-var getScale = function () {
-    return (window.innerWidth > 640) ? 1.5 : 1;
+var getScale = function (type) {
+    if (type === 'dl') {
+        return (window.innerWidth > 640) ? 1.5 : 1;
+    } else {
+        return 0.5
+    }
 }
 
 var downloadImage = function () {
     let to = "Letter for " + document.getElementById('person').innerHTML + ".png";
     document.getElementsByClassName('primary')[0].download = to;
     html2canvas(document.getElementById("card"), {
-        scale: getScale()
+        scale: getScale('dl')
     }).then(canvas => {
         let temp = canvas.toDataURL().split(';');
         let half0, half1;
         half0 = temp[0].replace('image', 'application');
         half0 = half0.replace('png', 'octet-stream');
         half1 = temp[1];
-        imageUrl = half0 + ';' + half1;
-        document.getElementsByClassName('primary')[0].href = imageUrl;
+        downloadUrl = half0 + ';' + half1;
+        document.getElementsByClassName('primary')[0].href = downloadUrl;
+    });
+
+    html2canvas(document.getElementById("card"), {
+        scale: getScale('test')
+    }).then(canvas => {
+        let temp = canvas.toDataURL().split(';');
+        let half0, half1;
+        half0 = temp[0].replace('image', 'application');
+        half0 = half0.replace('png', 'octet-stream');
+        half1 = temp[1];
+        emailUrl = half0 + ';' + half1;
+        document.getElementsByClassName('primary')[0].href = emailUrl;
     });
 }
+
 
 var triggerEmail = function () {
     document.getElementById('trig').style.display = 'none';
@@ -69,7 +87,7 @@ var sendEmail = function () {
 
     var data = {
         "email": emailAddress,
-        "image": imageUrl
+        "image": emailUrl
     }
 
     fetch(reqUrl, {
