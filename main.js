@@ -32,7 +32,7 @@ var hideDesc = function () {
 
 var getScale = function (type) {
     if (type === 'dl') {
-        return (window.innerWidth > 640) ? 0.5 : 1;
+        return (window.innerWidth > 640) ? 1.5 : 1;
     } else {
         return 0.3
     }
