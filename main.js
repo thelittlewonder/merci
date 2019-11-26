@@ -51,7 +51,7 @@ var downloadImage = function () {
 }
 
 
-/*var triggerEmail = function () {
+var triggerEmail = function () {
     document.getElementById('trig').style.display = 'none';
     document.getElementById('email').style.display = 'flex';
 }
@@ -70,7 +70,7 @@ var sendEmail = function () {
 
     var data = {
         "email": emailAddress,
-        "image": emailUrl
+        "image": downloadUrl
     }
 
     fetch(reqUrl, {
@@ -84,7 +84,7 @@ var sendEmail = function () {
         .then(function (data) {
             console.log(data)
         });
-}*/
+}
 
 let a = document.getElementsByClassName('editable');
 for (i = 0; i < a.length; i++) {
