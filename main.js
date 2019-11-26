@@ -44,7 +44,6 @@ var downloadImage = function () {
         let temp = canvas.toDataURL().split(';');
         let half0, half1;
         emailUrl = temp[1].split(',')[1];
-        console.log(x[1]);
         half0 = temp[0].replace('image', 'application');
         half0 = half0.replace('png', 'octet-stream');
         half1 = temp[1];
