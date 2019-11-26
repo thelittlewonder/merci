@@ -83,10 +83,10 @@ var sendEmail = function () {
         })
         .then(function (response) {
             return response.json();
-            document.getElementById('loader').style.display = 'none';
         })
         .then(function (data) {
-            console.log(data)
+            console.log(data);
+            document.getElementById('loader').style.display = 'none';
         });
 }
 
