@@ -68,7 +68,7 @@ var sendEmail = function () {
     document.getElementById('loader').style.display = 'inline-block';
     var headers = {
         "Content-Type": "application/json",
-        "Access-Control-Origin": "*"
+        "Access-Control-Origin": "https://thelittlewonder.github.io/merci/"
     }
 
     var data = {
@@ -82,7 +82,6 @@ var sendEmail = function () {
             body: JSON.stringify(data)
         })
         .then(function (response) {
-            let status = response.status;
             console.log(status);
             if (status === 200) {
                 document.getElementById('sendbtn').style.display = 'block';
