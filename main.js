@@ -82,11 +82,8 @@ var sendEmail = function () {
             body: JSON.stringify(data)
         })
         .then(function (response) {
-            console.log(status);
-            if (status === 200) {
-                document.getElementById('sendbtn').style.display = 'block';
-                document.getElementById('loader').style.display = 'none';
-            }
+            document.getElementById('sendbtn').style.display = 'block';
+            document.getElementById('loader').style.display = 'none';
         });
 }
 
