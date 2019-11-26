@@ -2,7 +2,45 @@
   font-family: "Smiley";
   src: url("./assets/Smiley.otf") format("opentype");
 }
+#nocode {
+  padding: 1em;
+  margin-top: 25%;
+}
+#nocode img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+#nocode h1 {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #282456;
+  margin-bottom: 12px;
+}
+#nocode h2 {
+  font-family: "Source Sans Pro";
+  font-size: 0.875em;
+  color: rgba(40, 36, 86, 0.75);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+#nocode p {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  background-color: #282456;
+  border-radius: 2px;
+  text-align: center;
+  margin-top: 16px;
+}
+
 @media screen and (min-width: 1260px) {
+  #nocode {
+    display: none;
+  }
+
   .container {
     height: 100vh;
     flex-direction: row;
@@ -62,8 +100,13 @@
   }
 }
 @media screen and (max-width: 640px) {
+  #nocode {
+    display: block;
+  }
+
   .container {
     flex-direction: column;
+    display: none !important;
   }
   .container .sidebar {
     width: 100%;
