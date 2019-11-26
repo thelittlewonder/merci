@@ -68,7 +68,7 @@ var sendEmail = function () {
     document.getElementById('loader').style.display = 'inline-block';
     var headers = {
         "Content-Type": "application/json",
-        "Access-Control-Origin": "https://thelittlewonder.github.io/merci/"
+        "Access-Control-Origin": "no-cors"
     }
 
     var data = {
