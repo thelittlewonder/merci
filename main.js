@@ -1,6 +1,5 @@
 var flag = 0;
 var downloadUrl = '';
-var emailUrl = '';
 var loadImage = function (input) {
     var preview = document.getElementById('friends');
     if (input.files && input.files[0]) {
@@ -33,7 +32,7 @@ var hideDesc = function () {
 
 var getScale = function (type) {
     if (type === 'dl') {
-        return (window.innerWidth > 640) ? 1.5 : 1;
+        return (window.innerWidth > 640) ? 0.5 : 1;
     } else {
         return 0.3
     }
