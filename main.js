@@ -1,5 +1,6 @@
 var flag = 0;
 var downloadUrl = '';
+var emailUrl = '';
 var loadImage = function (input) {
     var preview = document.getElementById('friends');
     if (input.files && input.files[0]) {
@@ -42,6 +43,8 @@ var downloadImage = function () {
     }).then(canvas => {
         let temp = canvas.toDataURL().split(';');
         let half0, half1;
+        emailUrl = temp[1].split(',')[1];
+        console.log(x[1]);
         half0 = temp[0].replace('image', 'application');
         half0 = half0.replace('png', 'octet-stream');
         half1 = temp[1];
@@ -70,7 +73,7 @@ var sendEmail = function () {
 
     var data = {
         "email": emailAddress,
-        "image": downloadUrl
+        "image": emailUrl
     }
 
     fetch(reqUrl, {
