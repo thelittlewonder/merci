@@ -64,7 +64,8 @@ var sendEmail = function () {
     let emailAddress, reqUrl;
     emailAddress = document.getElementById('address').value;
     reqUrl = 'https://thanksjhalwa.herokuapp.com/'
-
+    document.getElementById('sendbtn').style.display = 'none';
+    document.getElementById('loader').style.display = 'inline-block';
     var headers = {
         "Content-Type": "application/json",
         "Access-Control-Origin": "*"
@@ -82,6 +83,7 @@ var sendEmail = function () {
         })
         .then(function (response) {
             return response.json();
+            document.getElementById('loader').style.display = 'none';
         })
         .then(function (data) {
             console.log(data)

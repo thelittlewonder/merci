@@ -3,28 +3,32 @@
     src: url("./assets/Smiley.otf") format("opentype");
 }
 
-#nocode{
+#nocode {
     padding: 1em;
     margin-top: 25%;
-    img{
+
+    img {
         width: 100%;
         margin-bottom: 16px;
     }
-    h1{
+
+    h1 {
         font-family: "Source Serif Pro";
         font-weight: 700;
         font-size: 1.5em;
         color: #282456;
         margin-bottom: 12px;
     }
-    h2{
+
+    h2 {
         font-family: "Source Sans Pro";
         font-size: 1em;
-        color: rgba(40,36,86,0.75);
+        color: rgba(40, 36, 86, 0.75);
         line-height: 1.5;
         margin-bottom: 8px;
     }
-    p{
+
+    p {
         font-family: "Source Sans Pro";
         font-weight: 600;
         font-size: 16px;
@@ -38,9 +42,10 @@
 }
 
 @media screen and (min-width: 1260px) {
-    #nocode{
+    #nocode {
         display: none;
     }
+
     .container {
         height: 100vh;
         flex-direction: row;
@@ -114,12 +119,14 @@
 }
 
 @media screen and (max-width: 640px) {
-    #nocode{
+    #nocode {
         display: block;
     }
+
     .container {
         flex-direction: column;
-        display: none!important;
+        display: none !important;
+
         .sidebar {
             width: 100%;
             justify-content: center;
@@ -135,7 +142,8 @@
 
         .main {
             width: 100%;
-            padding: 1em!important;
+            padding: 1em !important;
+
             .card {
                 flex-direction: column !important;
 
@@ -143,18 +151,22 @@
                     visibility: hidden;
                     height: 0px;
                 }
-                .picker{
+
+                .picker {
                     margin-top: 1.5em;
-                    .image-wrapper{
-                        width: 100%!important;
-                        height: 300px!important;
-                        img{
-                            width: 100%!important;
+
+                    .image-wrapper {
+                        width: 100% !important;
+                        height: 300px !important;
+
+                        img {
+                            width: 100% !important;
                         }
                     }
-                    .desc{
-                        left: 40px!important;
-                        bottom: 210px!important;
+
+                    .desc {
+                        left: 40px !important;
+                        bottom: 210px !important;
                     }
                 }
             }
@@ -171,12 +183,14 @@
             .divider {
                 height: 450px;
             }
-            .actions{
+
+            .actions {
                 flex-direction: column !important;
-                a{
+
+                a {
                     margin-bottom: 16px;
                     width: 100%;
-                    text-align:center;
+                    text-align: center;
                 }
             }
         }
@@ -231,10 +245,12 @@
             font-family: "Source Sans Pro";
             font-size: 0.75em;
             color: rgba(40, 36, 86, 0.50);
-            a{
+
+            a {
                 text-decoration: none;
                 color: inherit;
-                &:hover{
+
+                &:hover {
                     color: #66C4AE;
                 }
             }
@@ -354,32 +370,39 @@
             display: flex;
             flex-direction: row;
             margin-top: 24px;
-            #email{
+
+            #email {
                 display: flex;
                 flex-direction: row;
                 align-self: flex-start;
                 display: none;
-                input{
-                    background:transparent;
+
+                input {
+                    background: transparent;
                     border: 1px solid #fff;
                     border-radius: 2px;
-                    &:focus{
+
+                    &:focus {
                         border: 1px solid #66C4AE;
                         outline: none;
                     }
+
                     margin-right: 8px;
                     padding: 0 8px;
                     color: #66C4AE;
                     font-family: "Source Sans Pro";
                     font-size: 1.25em;
                 }
-                button{
+
+                button {
                     border-radius: 2px;
                     padding: 16px;
                     white-space: nowrap;
-                    &:focus{
+
+                    &:focus {
                         outline: none;
                     }
+
                     margin-right: 16px;
                 }
             }
@@ -390,9 +413,11 @@
                 border: none;
                 cursor: pointer;
                 text-decoration: none;
+
                 &:focus {
                     outline: none;
                 }
+
                 margin-right: 16px;
                 white-space: nowrap;
             }
@@ -407,7 +432,8 @@
                 transition-property: all;
                 transition-duration: 0.25s;
                 transition-timing-function: ease-in-out;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.01);
                 }
             }
@@ -431,4 +457,75 @@
         }
     }
 
+}
+
+#loader{
+    display: none;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 70px;
+    height: 0px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: -13px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
 }
