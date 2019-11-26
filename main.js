@@ -83,6 +83,7 @@ var sendEmail = function () {
         })
         .then(function (response) {
             let status = response.status;
+            console.log(status);
             if (status === 200) {
                 document.getElementById('sendbtn').style.display = 'block';
                 document.getElementById('loader').style.display = 'none';
