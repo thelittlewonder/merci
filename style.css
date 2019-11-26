@@ -303,15 +303,6 @@
   display: flex;
   flex-direction: row;
   margin-top: 24px;
-  /*.secondary {
-      font-size: 1.125em;
-      font-weight: 600;
-      background: #282456;
-      padding: 1em;
-      border: 1px solid #FFFFFF;
-      color: #FFFFFF;
-      align-self: flex-start;
-  }*/
 }
 .container .main .actions #email {
   display: flex;
@@ -367,6 +358,15 @@
 }
 .container .main .actions .primary:hover {
   transform: scale(1.01);
+}
+.container .main .actions .secondary {
+  font-size: 1.125em;
+  font-weight: 600;
+  background: #282456;
+  padding: 1em;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  align-self: flex-start;
 }
 .container .main .actions p {
   font-family: "Source Sans Pro";
