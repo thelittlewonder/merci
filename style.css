@@ -303,35 +303,6 @@
   display: flex;
   flex-direction: row;
   margin-top: 24px;
-  /*#email{
-      display: flex;
-      flex-direction: row;
-      align-self: flex-start;
-      display: none;
-      input{
-          background:transparent;
-          border: 1px solid #fff;
-          border-radius: 2px;
-          &:focus{
-              border: 1px solid #66C4AE;
-              outline: none;
-          }
-          margin-right: 8px;
-          padding: 0 8px;
-          color: #66C4AE;
-          font-family: "Source Sans Pro";
-          font-size: 1.25em;
-      }
-      button{
-          border-radius: 2px;
-          padding: 16px;
-          white-space: nowrap;
-          &:focus{
-              outline: none;
-          }
-          margin-right: 16px;
-      }
-  }*/
   /*.secondary {
       font-size: 1.125em;
       font-weight: 600;
@@ -341,6 +312,35 @@
       color: #FFFFFF;
       align-self: flex-start;
   }*/
+}
+.container .main .actions #email {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  display: none;
+}
+.container .main .actions #email input {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin-right: 8px;
+  padding: 0 8px;
+  color: #66C4AE;
+  font-family: "Source Sans Pro";
+  font-size: 1.25em;
+}
+.container .main .actions #email input:focus {
+  border: 1px solid #66C4AE;
+  outline: none;
+}
+.container .main .actions #email button {
+  border-radius: 2px;
+  padding: 16px;
+  white-space: nowrap;
+  margin-right: 16px;
+}
+.container .main .actions #email button:focus {
+  outline: none;
 }
 .container .main .actions a {
   border-radius: 2px;
