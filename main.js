@@ -82,11 +82,7 @@ var sendEmail = function () {
             body: JSON.stringify(data)
         })
         .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data);
-            document.getElementById('loader').style.display = 'none';
+            console.log(response.json());
         });
 }
 
