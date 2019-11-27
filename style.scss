@@ -75,7 +75,7 @@
             }
 
             .divider {
-                height: 500px;
+                height: 450px;
             }
         }
     }
@@ -326,7 +326,7 @@
                 }
 
                 .image-wrapper {
-                    height: 375px;
+                    height: 350px;
                     width: 320px;
                     overflow: hidden;
                     transition-property: opacity;
@@ -336,7 +336,6 @@
 
                 #friends {
                     width: 320px;
-                    height: 100%;
                     object-fit: cover;
                     border-radius: 4px;
                 }

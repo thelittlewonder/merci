@@ -67,7 +67,7 @@
     justify-content: flex-start;
   }
   .container .main .divider {
-    height: 500px;
+    height: 450px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1259px) {
@@ -269,7 +269,7 @@
   opacity: 0.15;
 }
 .container .main .card .picker .image-wrapper {
-  height: 375px;
+  height: 350px;
   width: 320px;
   overflow: hidden;
   transition-property: opacity;
@@ -278,7 +278,6 @@
 }
 .container .main .card .picker #friends {
   width: 320px;
-  height: 100%;
   object-fit: cover;
   border-radius: 4px;
 }
