@@ -71,6 +71,10 @@
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1259px) {
+  #nocode {
+    display: none;
+  }
+
   .container {
     flex-direction: column;
   }
