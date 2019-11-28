@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "Smiley";
-    src: url("./assets/Smiley.otf") format("opentype");
+    font-family: "Mountecarlo";
+    src: url("./assets/Mountecarlo.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Noteworthy";
+    src: url("./assets/noteworthy.ttf") format("truetype");
 }
 
 #nocode {
@@ -75,7 +80,7 @@
             }
 
             .divider {
-                height: 450px;
+                height: 500px;
             }
         }
     }
@@ -276,10 +281,11 @@
 
             h2 {
                 font-size: 1.5em;
-                font-family: "Smiley";
+                font-family: "Mountecarlo";
                 color: #D65454;
 
                 span {
+                    font-family: "Noteworthy";
                     color: #282456;
                     margin-left: 0.5em;
                 }
@@ -288,18 +294,26 @@
             .section {
                 margin-top: 1.5em;
                 font-family: "Smiley";
-                line-height: 2em;
+                line-height: 1.9em;
 
                 h3 {
-                    font-size: 1.5em;
+                    font-family: "Mountecarlo";
+                    font-size: 1.4em;
                     color: #D65454;
                 }
 
                 p {
+                    font-family: "Noteworthy";
                     font-size: 1.25em;
                     color: #282456;
                     cursor: pointer;
                 }
+            }
+            .last-row{
+                margin-top: 1em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
             }
 
             .divider {
@@ -311,6 +325,7 @@
             .salutation {
                 @extend .section;
                 transform: rotate(-5deg);
+                max-width: 150px;
 
                 p {
                     font-size: 24px;

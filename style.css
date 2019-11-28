@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "Smiley";
-  src: url("./assets/Smiley.otf") format("opentype");
+  font-family: "Mountecarlo";
+  src: url("./assets/Mountecarlo.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noteworthy";
+  src: url("./assets/noteworthy.ttf") format("truetype");
 }
 #nocode {
   padding: 1em;
@@ -67,7 +71,7 @@
     justify-content: flex-start;
   }
   .container .main .divider {
-    height: 450px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 1259px) {
@@ -229,26 +233,35 @@
 }
 .container .main .card h2 {
   font-size: 1.5em;
-  font-family: "Smiley";
+  font-family: "Mountecarlo";
   color: #D65454;
 }
 .container .main .card h2 span {
+  font-family: "Noteworthy";
   color: #282456;
   margin-left: 0.5em;
 }
 .container .main .card .section, .container .main .card .salutation {
   margin-top: 1.5em;
   font-family: "Smiley";
-  line-height: 2em;
+  line-height: 1.9em;
 }
 .container .main .card .section h3, .container .main .card .salutation h3 {
-  font-size: 1.5em;
+  font-family: "Mountecarlo";
+  font-size: 1.4em;
   color: #D65454;
 }
 .container .main .card .section p, .container .main .card .salutation p {
+  font-family: "Noteworthy";
   font-size: 1.25em;
   color: #282456;
   cursor: pointer;
+}
+.container .main .card .last-row {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .container .main .card .divider {
   border: 0.5px solid #66C4AE;
@@ -257,6 +270,7 @@
 }
 .container .main .card .salutation {
   transform: rotate(-5deg);
+  max-width: 150px;
 }
 .container .main .card .salutation p {
   font-size: 24px;
