@@ -259,7 +259,7 @@
   cursor: pointer;
 }
 .container .main .card .last-row {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
