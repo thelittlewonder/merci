@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Mountecarlo";
-    font-display: auto;
+    font-display: fallback;
     src: url("./assets/Mountecarlo.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Noteworthy";
-    font-display: auto;
+    font-display: fallback;
     src: url("./assets/noteworthy.ttf") format("truetype");
 }
 
