@@ -234,25 +234,28 @@
 .container .main .card h2 {
   font-size: 1.5em;
   font-family: "Mountecarlo";
+  font-display: auto;
   color: #D65454;
 }
 .container .main .card h2 span {
   font-family: "Noteworthy";
+  font-display: auto;
   color: #282456;
   margin-left: 0.5em;
 }
 .container .main .card .section, .container .main .card .salutation {
   margin-top: 1.5em;
-  font-family: "Smiley";
   line-height: 1.9em;
 }
 .container .main .card .section h3, .container .main .card .salutation h3 {
   font-family: "Mountecarlo";
+  font-display: auto;
   font-size: 1.4em;
   color: #D65454;
 }
 .container .main .card .section p, .container .main .card .salutation p {
   font-family: "Noteworthy";
+  font-display: auto;
   font-size: 1.25em;
   color: #282456;
   cursor: pointer;

@@ -282,10 +282,12 @@
             h2 {
                 font-size: 1.5em;
                 font-family: "Mountecarlo";
+                font-display: auto;
                 color: #D65454;
 
                 span {
                     font-family: "Noteworthy";
+                    font-display: auto;
                     color: #282456;
                     margin-left: 0.5em;
                 }
@@ -293,17 +295,18 @@
 
             .section {
                 margin-top: 1.5em;
-                font-family: "Smiley";
                 line-height: 1.9em;
 
                 h3 {
                     font-family: "Mountecarlo";
+                    font-display: auto;
                     font-size: 1.4em;
                     color: #D65454;
                 }
 
                 p {
                     font-family: "Noteworthy";
+                    font-display: auto;
                     font-size: 1.25em;
                     color: #282456;
                     cursor: pointer;
