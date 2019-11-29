@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('main-loader').style.display = 'none';
+});
+
 var flag = 0;
 var downloadUrl = '';
 var emailUrl = '';

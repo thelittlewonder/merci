@@ -8,6 +8,95 @@
   font-display: fallback;
   src: url("./assets/Mountecarlo.otf") format("opentype");
 }
+#main-loader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
+  margin: auto;
+  position: fixed;
+  background-color: #282456;
+}
+#main-loader .beatingHeart {
+  width: 50px;
+  margin: 25% auto;
+  height: 50px;
+}
+#main-loader .beatingHeart .heart {
+  position: absolute;
+  width: 50px;
+  height: 45px;
+  opacity: 0.6;
+  -webkit-animation: beat 3s infinite ease-in-out;
+}
+#main-loader .heart:before,
+#main-loader .heart:after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 0;
+  width: 25px;
+  height: 40px;
+  background: #66C4AE;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#main-loader .fushiaHeart:before,
+#main-loader .fushiaHeart:after {
+  background: #66C4AE;
+}
+#main-loader .pinkHeart:before,
+#main-loader .pinkHeart:after {
+  background: #66C4AE;
+}
+#main-loader .heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+#main-loader .beatingHeart .heart2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+#main-loader .beatingHeart .heart3 {
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+}
+#main-loader .beatingHeart .heart4 {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+#main-loader .beatingHeart .heart5 {
+  -webkit-animation-delay: -2.5s;
+  animation-delay: -2.5s;
+}
+@-webkit-keyframes beat {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
 #nocode {
   padding: 1em;
   margin-top: 25%;

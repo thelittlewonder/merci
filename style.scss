@@ -10,6 +10,108 @@
     src: url("./assets/Mountecarlo.otf") format("opentype");
 }
 
+#main-loader {
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    top: 0;
+    margin: auto;
+    position: fixed;
+    background-color: #282456;
+    .beatingHeart {
+        width: 50px;
+        margin: 25% auto;
+        height: 50px;
+    }
+
+    .beatingHeart .heart {
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        opacity: 0.6;
+        -webkit-animation: beat 3.0s infinite ease-in-out;
+    }
+
+    .heart:before,
+    .heart:after {
+        position: absolute;
+        content: "";
+        left: 25px;
+        top: 0;
+        width: 25px;
+        height: 40px;
+        background: #66C4AE;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    .fushiaHeart:before,
+    .fushiaHeart:after {
+        background: #66C4AE;
+    }
+
+    .pinkHeart:before,
+    .pinkHeart:after {
+        background: #66C4AE;
+    }
+
+    .heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+
+    .beatingHeart .heart2 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+
+    .beatingHeart .heart3 {
+        -webkit-animation-delay: -1.5s;
+        animation-delay: -1.5s;
+    }
+
+    .beatingHeart .heart4 {
+        -webkit-animation-delay: -2.0s;
+        animation-delay: -2.0s;
+    }
+
+    .beatingHeart .heart5 {
+        -webkit-animation-delay: -2.5s;
+        animation-delay: -2.5s;
+    }
+
+    @-webkit-keyframes beat {
+
+        0%,
+        100% {
+            -webkit-transform: scale(0.0)
+        }
+
+        50% {
+            -webkit-transform: scale(1.0)
+        }
+    }
+}
+
 #nocode {
     padding: 1em;
     margin-top: 25%;
@@ -271,11 +373,13 @@
     .main {
         background-color: #282456;
         padding: 2em;
-        .content1{
+
+        .content1 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+
         .card {
             padding: 1.5em;
             background-color: #FAFAFA;
@@ -290,6 +394,7 @@
                 font-family: "Mountecarlo";
                 color: #D65454;
                 line-height: 1em;
+
                 span {
                     font-family: "Mountecarlo";
                     font-size: 1em;
