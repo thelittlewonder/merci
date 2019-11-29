@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: "Noteworthy";
+    font-family: "Julietta-Messie";
     font-display: fallback;
-    src: url("./assets/noteworthy.ttf") format("truetype");
+    src: url("./assets/Julietta-Messie.otf") format("opentype");
 }
 
 #nocode {
@@ -92,7 +92,7 @@
     #nocode {
         display: none;
     }
-    
+
     .container {
         flex-direction: column;
 
@@ -281,22 +281,26 @@
             flex-direction: row;
             justify-content: center;
 
+            .content1{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;            
+            }
+
             h2 {
                 font-size: 1.5em;
                 font-family: "Mountecarlo";
                 color: #D65454;
 
                 span {
-                    font-family: "Noteworthy";
+                    font-family: "Julietta-Messie";
+                    font-size: 1.2em;
                     color: #282456;
                     margin-left: 0.5em;
                 }
             }
 
             .section {
-                margin-top: 1.5em;
-                line-height: 1.9em;
-
                 h3 {
                     font-family: "Mountecarlo";
                     font-size: 1.4em;
@@ -304,13 +308,17 @@
                 }
 
                 p {
-                    font-family: "Noteworthy";
-                    font-size: 1.25em;
+                    font-family: "Source Serif Pro";
+                    font-weight: 400;
+                    font-size: 1.2em;
+                    margin-top: 0.2em;
+                    line-height: 1.5em;
                     color: #282456;
                     cursor: pointer;
                 }
             }
-            .last-row{
+
+            .last-row {
                 margin-top: 2em;
                 display: flex;
                 flex-direction: row;
@@ -329,7 +337,9 @@
                 max-width: 150px;
 
                 p {
-                    font-size: 24px;
+                    font-family: "Julietta-Messie";
+                    margin-top: 0.5em;
+                    font-size: 2em;
                 }
             }
 
@@ -478,7 +488,7 @@
 
 }
 
-#loader{
+#loader {
     display: none;
 }
 

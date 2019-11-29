@@ -4,9 +4,9 @@
   src: url("./assets/Mountecarlo.otf") format("opentype");
 }
 @font-face {
-  font-family: "Noteworthy";
+  font-family: "Julietta-Messie";
   font-display: fallback;
-  src: url("./assets/noteworthy.ttf") format("truetype");
+  src: url("./assets/Julietta-Messie.otf") format("opentype");
 }
 #nocode {
   padding: 1em;
@@ -233,19 +233,21 @@
   flex-direction: row;
   justify-content: center;
 }
+.container .main .card .content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .container .main .card h2 {
   font-size: 1.5em;
   font-family: "Mountecarlo";
   color: #D65454;
 }
 .container .main .card h2 span {
-  font-family: "Noteworthy";
+  font-family: "Julietta-Messie";
+  font-size: 1.2em;
   color: #282456;
   margin-left: 0.5em;
-}
-.container .main .card .section, .container .main .card .salutation {
-  margin-top: 1.5em;
-  line-height: 1.9em;
 }
 .container .main .card .section h3, .container .main .card .salutation h3 {
   font-family: "Mountecarlo";
@@ -253,8 +255,11 @@
   color: #D65454;
 }
 .container .main .card .section p, .container .main .card .salutation p {
-  font-family: "Noteworthy";
-  font-size: 1.25em;
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 0.2em;
+  line-height: 1.5em;
   color: #282456;
   cursor: pointer;
 }
@@ -274,7 +279,9 @@
   max-width: 150px;
 }
 .container .main .card .salutation p {
-  font-size: 24px;
+  font-family: "Julietta-Messie";
+  margin-top: 0.5em;
+  font-size: 2em;
 }
 .container .main .card .picker {
   display: flex;
