@@ -276,7 +276,7 @@
 }
 .container .main .card .salutation {
   transform: rotate(-5deg);
-  max-width: 150px;
+  max-width: 180px;
 }
 .container .main .card .salutation p {
   font-family: "Mountecarlo";
