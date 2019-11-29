@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Mountecarlo";
+    font-family: "gelpen";
     font-display: fallback;
-    src: url("./assets/Mountecarlo.otf") format("opentype");
+    src: url("./assets/GelPen.ttf") format("truetype");
 }
 
 @font-face {
@@ -281,15 +281,9 @@
             flex-direction: row;
             justify-content: center;
 
-            .content1{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;            
-            }
-
             h2 {
-                font-size: 1.5em;
-                font-family: "Mountecarlo";
+                font-size: 1.7em;
+                font-family: "Julietta-Messie";
                 color: #D65454;
 
                 span {
@@ -301,15 +295,15 @@
             }
 
             .section {
+                margin-top: 2em;
                 h3 {
-                    font-family: "Mountecarlo";
-                    font-size: 1.4em;
+                    font-family: "Julietta-Messie";
+                    font-size: 1.7em;
                     color: #D65454;
                 }
 
                 p {
-                    font-family: "Source Serif Pro";
-                    font-weight: 400;
+                    font-family: "gelpen";
                     font-size: 1.2em;
                     margin-top: 0.2em;
                     line-height: 1.5em;
@@ -338,7 +332,7 @@
 
                 p {
                     font-family: "Julietta-Messie";
-                    margin-top: 0.5em;
+                    margin-top: 0.3em;
                     font-size: 2em;
                 }
             }
