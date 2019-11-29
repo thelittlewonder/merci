@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: "Julietta-Messie";
+    font-family: "Mountecarlo";
     font-display: fallback;
-    src: url("./assets/Julietta-Messie.otf") format("opentype");
+    src: url("./assets/Mountecarlo.otf") format("opentype");
 }
 
 #nocode {
@@ -287,12 +287,12 @@
 
             h2 {
                 font-size: 1.7em;
-                font-family: "Julietta-Messie";
+                font-family: "Mountecarlo";
                 color: #D65454;
                 line-height: 1em;
                 span {
-                    font-family: "Julietta-Messie";
-                    font-size: 1.2em;
+                    font-family: "Mountecarlo";
+                    font-size: 1em;
                     color: #282456;
                     margin-left: 0.5em;
                 }
@@ -300,10 +300,10 @@
 
             .section {
                 h3 {
-                    font-family: "Julietta-Messie";
-                    font-size: 1.7em;
+                    font-family: "Mountecarlo";
+                    font-size: 1.4em;
                     color: #D65454;
-                    line-height: 1em;
+                    line-height: 1.5em;
                 }
 
                 p {
@@ -334,7 +334,7 @@
                 max-width: 150px;
 
                 p {
-                    font-family: "Julietta-Messie";
+                    font-family: "Mountecarlo";
                     margin-top: 0.3em;
                     font-size: 2em;
                 }
