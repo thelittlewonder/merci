@@ -271,7 +271,11 @@
     .main {
         background-color: #282456;
         padding: 2em;
-
+        .content1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .card {
             padding: 1.5em;
             background-color: #FAFAFA;
@@ -285,7 +289,7 @@
                 font-size: 1.7em;
                 font-family: "Julietta-Messie";
                 color: #D65454;
-
+                line-height: 1em;
                 span {
                     font-family: "Julietta-Messie";
                     font-size: 1.2em;
@@ -295,20 +299,19 @@
             }
 
             .section {
-                margin-top: 2em;
                 h3 {
                     font-family: "Julietta-Messie";
                     font-size: 1.7em;
-                    line-height: 1.2em;
                     color: #D65454;
+                    line-height: 1em;
                 }
 
                 p {
                     font-family: "gelpen";
                     font-size: 1.2em;
-                    line-height: 1.5em;
                     color: #282456;
                     cursor: pointer;
+                    line-height: 1.5em;
                 }
             }
 
