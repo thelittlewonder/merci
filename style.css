@@ -250,12 +250,12 @@
 .container .main .card .section h3, .container .main .card .salutation h3 {
   font-family: "Julietta-Messie";
   font-size: 1.7em;
+  line-height: 1.2em;
   color: #D65454;
 }
 .container .main .card .section p, .container .main .card .salutation p {
   font-family: "gelpen";
   font-size: 1.2em;
-  margin-top: 0.2em;
   line-height: 1.5em;
   color: #282456;
   cursor: pointer;
