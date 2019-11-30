@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('main-loader').style.display = 'none';
+    downloadImage();
 });
 
 var flag = 0;

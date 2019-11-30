@@ -277,18 +277,23 @@
 .container h2 {
   padding: 2px 4px;
 }
-.container span, .container h3, .container p {
+.container span,
+.container h3,
+.container p {
   padding: 0 4px;
   max-width: 370px;
 }
-.container h2:focus, .container h3:focus {
+.container h2:focus,
+.container h3:focus {
   outline: 1px dashed #D65454;
 }
 .container span:focus,
 .container p:focus {
   outline: 1px dashed #282456;
 }
-.container h2, .container h3, .container span {
+.container h2,
+.container h3,
+.container span {
   cursor: pointer;
 }
 .container .sidebar {
@@ -304,6 +309,7 @@
   font-weight: 700;
   font-size: 2.25em;
   color: #282456;
+  line-height: 1.2em;
 }
 .container .sidebar h2 {
   font-family: "Source Sans Pro";

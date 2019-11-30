@@ -199,6 +199,7 @@
     .container {
         flex-direction: column;
         align-items: center;
+
         .sidebar {
             width: 100%;
             justify-content: center;
@@ -320,21 +321,25 @@
 
 .container {
     display: flex;
-    .start{
+
+    .start {
         display: flex;
         flex-direction: row;
     }
 
-    h2{
+    h2 {
         padding: 2px 4px;
     }
 
-    span, h3, p {
+    span,
+    h3,
+    p {
         padding: 0 4px;
         max-width: 370px;
     }
 
-    h2:focus, h3:focus{
+    h2:focus,
+    h3:focus {
         outline: 1px dashed #D65454;
     }
 
@@ -343,7 +348,9 @@
         outline: 1px dashed #282456;
     }
 
-    h2, h3, span {
+    h2,
+    h3,
+    span {
         cursor: pointer;
     }
 
@@ -361,6 +368,7 @@
             font-weight: 700;
             font-size: 2.25em;
             color: #282456;
+            line-height: 1.2em;
         }
 
         h2 {
@@ -413,6 +421,7 @@
                 color: #D65454;
                 line-height: 1em;
             }
+
             span {
                 font-family: "Mountecarlo";
                 font-size: 1.7em;
