@@ -317,6 +317,7 @@
   color: rgba(40, 36, 86, 0.75);
   line-height: 1.5em;
   margin-top: 0.75em;
+  cursor: inherit;
 }
 .container .sidebar footer {
   font-family: "Source Sans Pro";
