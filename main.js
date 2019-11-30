@@ -60,6 +60,7 @@ var downloadImage = function () {
 var triggerEmail = function () {
     document.getElementById('trig').style.display = 'none';
     document.getElementById('email').style.display = 'flex';
+    document.getElementById('disclaimer').innerHTML = 'Just enter the email address and the card will be sent from an anonymous email.'
 }
 
 var sendEmail = function () {
