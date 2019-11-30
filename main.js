@@ -56,6 +56,17 @@ var downloadImage = function () {
     });
 }
 
+
+let a = document.getElementsByClassName('editable');
+for (i = 0; i < a.length; i++) {
+    a[i].addEventListener("focusout", function () {
+        downloadImage();
+    }, false)
+}
+document.getElementById('friends').addEventListener('load', function () {
+    downloadImage;
+})
+
 var triggerEmail = function () {
     document.getElementById('trig').style.display = 'none';
     document.getElementById('email').style.display = 'flex';
@@ -99,11 +110,3 @@ document.getElementById('email').addEventListener('submit', function (e) {
 document.getElementById('address').addEventListener("click", function () {
     document.getElementById('sendbtn').innerHTML = 'Send →';
 })
-
-
-let a = document.getElementsByClassName('editable');
-for (i = 0; i < a.length; i++) {
-    a[i].addEventListener("focusout", function () {
-        downloadImage();
-    }, false)
-}
