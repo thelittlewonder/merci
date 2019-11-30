@@ -56,6 +56,9 @@ var downloadImage = function () {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+   downloadImage();
+});
 
 let a = document.getElementsByClassName('editable');
 for (i = 0; i < a.length; i++) {
@@ -64,7 +67,7 @@ for (i = 0; i < a.length; i++) {
     }, false)
 }
 document.getElementById('friends').addEventListener('load', function () {
-    downloadImage;
+    downloadImage();
 })
 
 var triggerEmail = function () {
