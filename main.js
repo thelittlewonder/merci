@@ -55,9 +55,6 @@ var downloadImage = function () {
         document.getElementsByClassName('primary')[0].href = downloadUrl;
     });
 }
-document.addEventListener("DOMContentLoaded", function () {
-    downloadImage();
-});
 
 var triggerEmail = function () {
     document.getElementById('trig').style.display = 'none';
