@@ -320,10 +320,22 @@
 
 .container {
     display: flex;
+    .start{
+        display: flex;
+        flex-direction: row;
+    }
 
-    p {
+    h2{
+        padding: 2px 4px;
+    }
+
+    span, h3, p {
         padding: 0 4px;
         max-width: 370px;
+    }
+
+    h2:focus, h3:focus{
+        outline: 1px dashed #D65454;
     }
 
     span:focus,
@@ -331,7 +343,7 @@
         outline: 1px dashed #282456;
     }
 
-    span {
+    h2, h3, span {
         cursor: pointer;
     }
 
@@ -400,13 +412,13 @@
                 font-family: "Mountecarlo";
                 color: #D65454;
                 line-height: 1em;
-
-                span {
-                    font-family: "Mountecarlo";
-                    font-size: 1em;
-                    color: #282456;
-                    margin-left: 0.5em;
-                }
+            }
+            span {
+                font-family: "Mountecarlo";
+                font-size: 1.7em;
+                color: #282456;
+                margin-left: 0.2em;
+                display: inline;
             }
 
             .section {

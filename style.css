@@ -270,15 +270,25 @@
 .container {
   display: flex;
 }
-.container p {
+.container .start {
+  display: flex;
+  flex-direction: row;
+}
+.container h2 {
+  padding: 2px 4px;
+}
+.container span, .container h3, .container p {
   padding: 0 4px;
   max-width: 370px;
+}
+.container h2:focus, .container h3:focus {
+  outline: 1px dashed #D65454;
 }
 .container span:focus,
 .container p:focus {
   outline: 1px dashed #282456;
 }
-.container span {
+.container h2, .container h3, .container span {
   cursor: pointer;
 }
 .container .sidebar {
@@ -339,11 +349,12 @@
   color: #D65454;
   line-height: 1em;
 }
-.container .main .card h2 span {
+.container .main .card span {
   font-family: "Mountecarlo";
-  font-size: 1em;
+  font-size: 1.7em;
   color: #282456;
-  margin-left: 0.5em;
+  margin-left: 0.2em;
+  display: inline;
 }
 .container .main .card .section h3, .container .main .card .salutation h3 {
   font-family: "Mountecarlo";
