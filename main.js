@@ -63,7 +63,6 @@ var triggerEmail = function () {
 }
 
 var sendEmail = function () {
-    event.preventDefault();
     downloadImage();
     let emailAddress, reqUrl;
     emailAddress = document.getElementById('address').value;
@@ -91,6 +90,16 @@ var sendEmail = function () {
             document.getElementById('sendbtn').style.display = 'block';
         });
 }
+
+document.getElementById('email').addEventListener('submit', function (e) {
+    e.preventDefault();
+    sendEmail();
+});
+
+document.getElementById('address').addEventListener("click", function () {
+    document.getElementById('sendbtn').innerHTML = 'Send →';
+})
+
 
 let a = document.getElementsByClassName('editable');
 for (i = 0; i < a.length; i++) {

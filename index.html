@@ -44,7 +44,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Source+Serif+Pro:700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="reset.min.css">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -133,8 +133,8 @@
                 <a class="primary" onclick="downloadImage()" download="placeholder.png" href="#">Download Letter ↓</a>
                 <a class="secondary" onclick="triggerEmail()" id="trig">Send Anonymously</a>
                 <form id="email">
-                    <input type="email" id="address" required pattern="banana|cherry">
-                    <button type="submit" class="secondary" onclick="sendEmail()">
+                    <input type="email" id="address" required placeholder="iit2016191@iiita.ac.in">
+                    <button type="submit" class="secondary">
                         <div id="sendbtn">Send →</div>
                         <div class="lds-ellipsis" id="loader">
                             <div></div>

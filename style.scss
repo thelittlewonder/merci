@@ -18,6 +18,7 @@
     margin: auto;
     position: fixed;
     background-color: #282456;
+
     .beatingHeart {
         width: 50px;
         margin: 25% auto;
@@ -171,9 +172,9 @@
             width: 60%;
 
             .desc {
-                position: absolute;
-                left: 77%;
-                top: 25%;
+                position: relative;
+                left: 20%;
+                top: -200px;
                 max-width: 200px;
                 text-align: center;
                 z-index: 99;
@@ -381,6 +382,7 @@
         }
 
         .card {
+            max-width: 860px;
             padding: 1.5em;
             background-color: #FAFAFA;
             border-radius: 4px;
@@ -421,7 +423,7 @@
             }
 
             .last-row {
-                margin-top: 2em;
+                margin-top: -4em;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -495,6 +497,29 @@
                 }
             }
 
+        }
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            opacity: 0.2;
+            color: #FAFAFA;
+        }
+
+        ::-moz-placeholder {
+            opacity: 0.2;
+            color: #FAFAFA;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            opacity: 0.2;
+            color: #FAFAFA;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            opacity: 0.2;
+            color: #FAFAFA;
         }
 
         .actions {
