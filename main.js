@@ -53,7 +53,6 @@ var downloadImage = function () {
         half1 = temp[1];
         downloadUrl = half0 + ';' + half1;
         document.getElementsByClassName('primary')[0].href = downloadUrl;
-        console.log('poof')
     });
 }
 
